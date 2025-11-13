@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический квиз</title>
+    <script src="start.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Космический квиз</h1>
+        <input type="text" class="name" placeholder="Введите имя" required>
+        <p class="name_error"></p>
+        <button type="button" id="startBtn">Начало квиза</button>
+
+    </div>
+
+    <div class="test">
+        <h2 id="question-title"></h2>
+        <img id="question-image" src="" alt="">
+        <div id="answers"></div>
+        <button id="nextbtn">Следующий вопрос</button>
+
+    </div>
+
+    <div id="results">
+        <h2>Результаты теста</h2>
+        <div id="results-text"></div>
+        <button id="restart-quiz">Повторить тест</button>
+    </div>
+
+</body>
+
+</html>
