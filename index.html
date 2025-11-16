@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="form">
+    <div id="start-screen" class="screen active">
         <h1>Космический квиз</h1>
         <input type="text" class="name" placeholder="Введите имя" required>
         <p class="name_error"></p>
@@ -18,19 +18,28 @@
 
     </div>
 
-    <div class="test">
-        <h2 id="question-title"></h2>
-        <img id="question-image" src="" alt="">
-        <div id="answers"></div>
-        <button id="nextbtn">Следующий вопрос</button>
+    <div id="quiz-screen" class="screen">
+            <div class="screen-content">
+                <h2 id="question-text"></h2>
+                
+                <div class="answers-container" id="answers-container">
+           
+                </div>
+                
+                <button id="next-btn" class="btn" disabled>Далее</button>
+            </div>
+        </div>
 
-    </div>
 
-    <div id="results">
-        <h2>Результаты теста</h2>
-        <div id="results-text"></div>
-        <button id="restart-quiz">Повторить тест</button>
-    </div>
+        <div id="results-screen" class="screen">
+            <div class="screen-content">
+                <h1>Результаты</h1>
+                <div class="score" id="score-text"></div>
+                
+                <div class="results-container" id="results-container">
+                </div>
+                
+                <button id="restart-btn" class="btn">Пройти ещё раз</button>
 
 </body>
 
